@@ -5,13 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="project/images/favicon.jpg" />
-    <link rel="icon" type="image/png" sizes="32x32" href="project/images/favicon.jpg" />
-    <link rel="icon" type="image/png" sizes="16x16" href="project/images/favicon.jpg" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="project/images/favicon.jpg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="project/images/favicon.jpg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="project/images/favicon.jpg"
+    />
     <link rel="manifest" href="project/images/favicon.jpg" />
   </head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=G-H54QXPVSG4"
   ></script>
@@ -28,53 +42,179 @@
   <body>
     <div class="header">
       <div class="header-right">
-        <a href="index.html">Home</a>
-        <a href="bluefin.html">Bluefin Tuna</a>
-        <a href="regulations.html">Regulations</a>
-        <a href="equipment.html">Equipment</a>
-        <a href="techniques.html">Techniques</a>
-        <a href="sitemap.html">Sitemap</a>
-        <a href="contact.html">Contact</a>
-        <a href="credits.html">Credits</a>
+        <a href="index.html" id="home">Home</a>
+        <a href="bluefin.html" id="about">Bluefin Tuna</a>
+        <a href="regulations.html" id="regs">Regulations</a>
+        <a href="equipment.html" id="equip">Equipment</a>
+        <a href="techniques.html" id="tech">Techniques</a>
+        <a href="sitemap.html" id="site">Sitemap</a>
+        <a href="contact.html" id="contact">Contact</a>
+        <a href="credits.html" id="creds">Credits</a>
       </div>
     </div>
     <div>
       <h1>Contact</h1>
-    <form method="post" action="mailto:wcaso1@babson.edu">
-      <div>
-        <label for="name">Name: </label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Enter your name"
-        />
-      </div>
-      <div>
-        <label for="email">Email: </label>
-        <input
-          type="text"
-          id="email"
-          name="email"
-          placeholder="Enter your email"
-        />
-      </div>
-      <div>
-        <div class="feedback">
-          <label for="feedback">Leave us your feedback: </label>
+      <form id="my-form" method="post" action="mailto:wcaso1@babson.edu">
+        <div>
+          <label for="name">Name: </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          />
         </div>
-        <div class="feedback">
-          <textarea
-            id="feedback"
-            name="feedback"
-            rows="10"
-            cols="50"
-            placeholder="Provide your feedback here..."
-          ></textarea>
+        <div>
+          <label for="email">Email: </label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
         </div>
-        <button id="submit" type="submit" name="submit-button">Submit
-        </button>
-      </div>
-    </form>
+        <div>
+          <div class="feedback">
+            <label for="feedback">Leave us your feedback: </label>
+          </div>
+          <div class="feedback">
+            <textarea
+              id="feedback"
+              name="feedback"
+              rows="10"
+              cols="50"
+              placeholder="Provide your feedback here..."
+            ></textarea>
+          </div>
+          <button id="submit" type="submit" name="submit-button">Submit</button>
+          <h3>About the Author</h3>
+          <p>
+            William Caso has grown up on the south shore of Massachusetts for
+            more than 20 years and has been fishing since he was a little kid.
+            He recently got into fishing for bluefin tuna and has learned a lot
+            from local fisherman. This wesite is dedicated to passing that
+            information along to the anglers of New England who are interested
+            in getting started in bluefin tuna fishing.
+          </p>
+        </div>
+      </form>
+      <p id="thanks"></p>
+    </div>
+    <script>
+      function home() {
+        document.getElementById("home").style.color = "red";
+        document.getElementById("home").style.fontSize = "15pt";
+      }
+
+      function about() {
+        document.getElementById("about").style.color = "red";
+        document.getElementById("about").style.fontSize = "15pt";
+      }
+
+      function regs() {
+        document.getElementById("regs").style.color = "red";
+        document.getElementById("regs").style.fontSize = "15pt";
+      }
+
+      function equip() {
+        document.getElementById("equip").style.color = "red";
+        document.getElementById("equip").style.fontSize = "15pt";
+      }
+
+      function tech() {
+        document.getElementById("tech").style.color = "red";
+        document.getElementById("tech").style.fontSize = "15pt";
+      }
+
+      function site() {
+        document.getElementById("site").style.color = "red";
+        document.getElementById("site").style.fontSize = "15pt";
+      }
+
+      function contact() {
+        document.getElementById("contact").style.color = "red";
+        document.getElementById("contact").style.fontSize = "15pt";
+      }
+
+      function creds() {
+        document.getElementById("creds").style.color = "red";
+        document.getElementById("creds").style.fontSize = "15pt";
+      }
+
+      function rHome() {
+        document.getElementById("home").style.color = "white";
+        document.getElementById("home").style.fontSize = "12pt";
+      }
+
+      function rAbout() {
+        document.getElementById("about").style.color = "white";
+        document.getElementById("about").style.fontSize = "12pt";
+      }
+
+      function rRegs() {
+        document.getElementById("regs").style.color = "white";
+        document.getElementById("regs").style.fontSize = "12pt";
+      }
+
+      function rEquip() {
+        document.getElementById("equip").style.color = "white";
+        document.getElementById("equip").style.fontSize = "12pt";
+      }
+
+      function rTech() {
+        document.getElementById("tech").style.color = "white";
+        document.getElementById("tech").style.fontSize = "12pt";
+      }
+
+      function rSite() {
+        document.getElementById("site").style.color = "white";
+        document.getElementById("site").style.fontSize = "12pt";
+      }
+
+      function rContact() {
+        document.getElementById("contact").style.color = "white";
+        document.getElementById("contact").style.fontSize = "12pt";
+      }
+
+      function rCreds() {
+        document.getElementById("creds").style.color = "white";
+        document.getElementById("creds").style.fontSize = "12pt";
+      }
+
+      document.getElementById("home").onmouseover = home;
+      document.getElementById("about").onmouseover = about;
+      document.getElementById("regs").onmouseover = regs;
+      document.getElementById("equip").onmouseover = equip;
+      document.getElementById("tech").onmouseover = tech;
+      document.getElementById("site").onmouseover = site;
+      document.getElementById("contact").onmouseover = contact;
+      document.getElementById("creds").onmouseover = creds;
+
+      document.getElementById("home").onmouseout = rHome;
+      document.getElementById("about").onmouseout = rAbout;
+      document.getElementById("regs").onmouseout = rRegs;
+      document.getElementById("equip").onmouseout = rEquip;
+      document.getElementById("tech").onmouseout = rTech;
+      document.getElementById("site").onmouseout = rSite;
+      document.getElementById("contact").onmouseout = rContact;
+      document.getElementById("creds").onmouseout = rCreds;
+
+      function validate() {
+        const myform = document.getElementById("my-form");
+        let n = myform["name"];
+        let e = myform["email"];
+        let f = myform["feedback"];
+
+        if (n.value.length == 0) {
+          alert("Please enter your name");
+        } else if (e.value.length == 0) {
+          alert("Please enter your email");
+        } else if (f.value.length == 0) {
+          alert("Please provide your feedback");
+        } else {
+        }
+      }
+      document.getElementById("submit").onclick = validate;
+    </script>
   </body>
 </html>
